@@ -76,14 +76,14 @@ class Attribute extends ModelEntity
     /**
      * @var array $folders
      *
-     * @ORM\Column(name="folders", type="JsonArrayType", length=255, nullable=true)
+     * @ORM\Column(name="folders", type="string", length=2048, nullable=true)
      */
     private $folders;
 
     /**
      * @var array $files
      *
-     * @ORM\Column(name="files", type="JsonArrayType", length=255, nullable=true)
+     * @ORM\Column(name="files", type="string", length=2048, nullable=true)
      */
     private $files;
 }
