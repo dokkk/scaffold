@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/menu.xsd">
+    <entries>
+        <entry>
+            <name>Scaffold</name>
+            <label lang="en">Scaffold</label>
+            <label lang="de">Scaffold</label>
+            <controller>ScaffoldBackend</controller>
+            <class>sprite-application-block</class>
+            <parent identifiedBy="controller">ConfigurationMenu</parent>
+            <children>
+                <entry>
+                    <name>Create</name>
+                    <label lang="en">Create</label>
+                    <label lang="de">Create</label>
+                    <controller>ScaffoldBackend</controller>
+                    <action>create</action>
+                    <class>sprite-application-block</class>
+                </entry>
+                <entry>
+                    <name>Log</name>
+                    <label lang="en">Log</label>
+                    <label lang="de">Log</label>
+                    <controller>ScaffoldLog</controller>
+                    <action>index</action>
+                    <class>sprite-application-block</class>
+                </entry>
+            </children>
+        </entry>
+    </entries>
+</menu>
