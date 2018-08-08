@@ -4,23 +4,17 @@ Ext.define('Shopware.apps.Scaffold', {
 
     name:'Shopware.apps.Scaffold',
 
-    loadPath: '{url action=load}',
+    loadPath: '{url action=create}',
     bulkLoad: true,
 
     controllers: [ 'Main' ],
 
     views: [
-        'list.Window',
-        'list.List',
-
-        'detail.Container',
+        'detail.Create',
         'detail.Window'
     ],
 
-    models: [
-        'Main',
-        'Customer',
-    ],
+    models: ['Main'],
 
     stores: [ 'Main' ],
 

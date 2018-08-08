@@ -17,14 +17,6 @@
                     <action>create</action>
                     <class>sprite-application-block</class>
                 </entry>
-                <entry>
-                    <name>Log</name>
-                    <label lang="en">Log</label>
-                    <label lang="de">Log</label>
-                    <controller>ScaffoldLog</controller>
-                    <action>index</action>
-                    <class>sprite-application-block</class>
-                </entry>
             </children>
         </entry>
     </entries>
