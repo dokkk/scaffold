@@ -11,6 +11,6 @@ TODO
 - menu.xml
 - services.xml
 - models
-- controllers
-- commands
+- backend controller
 - backend views
+- commands

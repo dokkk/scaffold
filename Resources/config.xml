@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/engine/Shopware/Components/Plugin/schema/config.xsd">
+	<elements>
+		<element required="true" type="boolean" scope="shop">
+			<name>scaffold</name>
+			<label lang="de">TO DO</label>
+			<label lang="en">TO DO</label>
+			<value>true</value>
+		</element>
+		<element type="combo">
+			<name>defaultFolders</name>
+			<label lang="de">Default folders</label>
+			<label lang="en">Default folders</label>
+			<store>Shopware.apps.Base.store.CustomerGroup</store>
+			<options>
+				<multiSelect>true</multiSelect>
+			</options>
+		</element>
+	</elements>
+</config>

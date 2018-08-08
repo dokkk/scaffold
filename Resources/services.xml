@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<container
+        xmlns="http://symfony.com/schema/dic/services"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd"
+>
+
+    <parameters>
+        <!-- scaffold.result_default_folders is a list of all the folders that are suggested to the user -->
+        <parameter key="scaffold.result_default_folders" type="collection">
+            <parameter key="commands">Commands</parameter>
+            <parameter key="controllers">Controllers</parameter>
+            <parameter key="models">Models</parameter>
+            <parameter key="resources_snippets">Resources\snippets</parameter>
+            <parameter key="resources_views">Resources\views</parameter>
+            <parameter key="services">Services</parameter>
+        </parameter>
+
+        <!-- scaffold.result_default_files is a list of all the files that are suggested to the user -->
+        <parameter key="scaffold.result_default_files" type="collection">
+            <parameter key="name">[name]</parameter>
+            <parameter key="plugin">plugin.xml</parameter>
+            <parameter key="service">Resources\service.xml</parameter>
+        </parameter>
+
+    </parameters>
+
+    <services>
+
+        <!-- Main service -->
+        <service id="scaffold.scaffold_service" class="Scaffold\Services\ScaffoldService" >
+            <argument type="service" id="service_container" />
+            <argument type="collection" id="scaffold.result_default_folders" />
+            <argument type="collection" id="result_default_files" />
+        </service>
+
+    </services>
+</container>
